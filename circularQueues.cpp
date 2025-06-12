@@ -56,18 +56,17 @@ public :
 
         // Cek jika natrian hanya memiliki satu elemen
         if (FRONT == REAR)
-
         {
             FRONT = -1;
             REAR = -1;
         }
         else 
         {
-            // Jika elemen yang dihapus berada di posisi terakhir array, kembali ke awal array
-            if(FRONT == max - 1)
-                FRONT = 0;
-            else 
-                FRONT = FRONT + 1;
+        // Jika elemen yang dihapus berada di posisi terakhir array, kembali ke awal array
+        if(FRONT == max - 1)
+            FRONT = 0;
+        else 
+            FRONT = FRONT + 1;
         }
     }
     void display()
@@ -103,9 +102,6 @@ public :
         }
         FRONT_position = 0; 
     }
-
-
-
 };
 
 int main()
@@ -151,15 +147,13 @@ int main()
                 cout << "Invalid option!!" << endl;
                 break;
             }
-
             }
         }
 
         catch (exception &e)
         {
             cout << "Check for the values entered." << endl;
-        }
-        
+        }  
     }
     return 0;
 }
