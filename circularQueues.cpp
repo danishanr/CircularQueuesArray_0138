@@ -37,7 +37,7 @@ public :
         {
             // Jika REAR berada di posisi terakhir array, kembali ke awal array
             if (REAR == max - 1)
-                REAR = 0;
+                REAR = 0; // yang buat circular queues
             else
                 REAR = REAR + 1;
         }
@@ -69,6 +69,11 @@ public :
             else 
                 FRONT = FRONT + 1;
         }
+    }
+    void display()
+    {
+        int FRONT_position = FRONT;
+        int REAR_position = REAR;
     }
 
 
